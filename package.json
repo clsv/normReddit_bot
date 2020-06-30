@@ -1,0 +1,32 @@
+{
+  "name": "redditBot",
+  "version": "0.1.1",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "debug": "npm run build && npm run watch-debug",
+    "build": "npm run tslint && npm run build-ts",
+    "build-ts": "npx tsc"
+  },
+  "author": "clsv",
+  "license": "ISC",
+  "dependencies": {
+    "@types/fluent-ffmpeg": "^2.1.14",
+    "@types/mongoose": "^5.7.21",
+    "@types/node": "^13.13.9",
+    "@types/request": "^2.48.5",
+    "await-to-js": "^2.1.1",
+    "dotenv": "^8.2.0",
+    "easyimage": "^3.1.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "mongoose": "^5.9.16",
+    "snoowrap": "^1.21.0",
+    "socks-proxy-agent": "^5.0.0",
+    "telegraf": "^3.38.0",
+    "telegraf-i18n": "^6.6.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.8.3"
+  }
+}
